@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+
+/* 공통 */
+* {
+  box-sizing: border-box;
+  color: #000000;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+html {
+  font-size: 13px;
+  /* 1rem : 13px */
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.layout_width {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 사이트로고, 검색 */
+.logo_search {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
+}
+
+.logo_search .logo img {
+  width: 160px;
+  height: 80px;
+  right: 320px;
+}
+
+.logo_search .etc {
+  width: 320px;
+}
+
+.logo_search .search {
+  width: 200px;
+  height: 80px;
+}
+
+.logo_search .search .form_wrap {
+  height: 25px;
+  border-bottom: 1px solid #222222;
+  float: right;
+  top: 48px;
+  position: relative;
+}
+
+.logo_search .search input[type="image"] {
+  height: 25px;
+  justify-content: flex-end;
+}
+
+.logo_search .search input[type="text"] {
+  width: 160px;
+  border: 0;
+  padding: 0;
+  bottom: 7px;
+  position: relative;
+}
+
+/* 메인 메뉴 */
+nav {
+  border-bottom: 1px solid #000000;
+}
+
+nav .main_menu {
+  min-height: 60px;
+  top: 10px;
+  position: relative;
+}
+
+nav ul li {
+  float: left;
+  width: calc((100% - 50px) / 5);
+  text-align: center;
+}
+
+nav ul :after {
+  clear: left;
+  content: "";
+  display: block;
+}
+
+nav li a {
+  display: block;
+  height: 45px;
+  font-size: 16px;
+  letter-spacing: -0.32px;
+  line-height: 45px;
+}
+
+nav li i {
+  font-size: 1.8rem;
+  vertical-align: middle;
+  position: relative;
+  top: 12px;
+  cursor: pointer;
+}
+
+nav li.more_menu {
+  width: 50px;
+  text-align: center;
+  bottom: 10px;
+  position: relative;
+}
+
+/* 메인 내용 */
+main {
+  min-height: 2000px;
+}
+
+main .goods_list {
+  min-height: 1100px;
+}
+
+main .spread_bar {
+  width: 40px;
+  height: 1px;
+  background-color: #030303;
+  margin: 20px auto 50px auto;
+  transition: width 1s;
+}
+
+main:hover .spread_bar {
+  width: 120px;
+}
+
+main .main_desc {
+  top: 30px;
+  position: relative;
+}
+
+main .mtit {
+  color: #222222;
+  font-weight: 300;
+  text-align: center;
+  font-size: 25px;
+}
+
+.goods_list .goods .image {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.goods_list .goods .goods_name {
+  color: #111111;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 5px 0 10px;
+  overflow: hidden;
+  word-break: break-all;
+  line-height: 20px;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 10px;
+}
+
+.goods_list .goods .goods_price {
+  color: #777777;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  word-break: break-all;
+  margin-bottom: 8px;
+}
+
+.goods_list ul .goods {
+  float: left;
+  width: calc(100% / 3 - 60px);
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+/* 브랜드 포커스 */
+
+main .brand_focus {
+  min-height: 300px;
+}
+
+.brand_list .brand .image {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.brand_list .brand .brand_name {
+  color: #111111;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 5px 0 10px;
+  overflow: hidden;
+  word-break: break-all;
+  line-height: 20px;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 10px;
+}
+
+.brand_list .brand.sizing img {
+  height: 203.98px;
+}
+
+.brand_list .brand .brand_desc {
+  color: #777777;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  word-break: break-all;
+  margin-bottom: 8px;
+}
+
+.brand_list ul .brand {
+  float: left;
+  width: calc(100% / 3 - 70px);
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+/* 사이트맵 */
+footer {
+  margin-bottom: 20px;
+}
